@@ -1,0 +1,36 @@
+h1 {
+  font-family: pokemon-solid;
+  letter-spacing: 3px;
+  text-decoration-line: underline;
+  margin: 20px 0px;
+}
+
+div {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border: 10px solid blue;
+  width: fit-content;
+  background-color: yellow;
+  border-radius: 15px;
+}
+
+.header-div {
+border: none;
+}
+
+.instructions {
+  margin-top: 150px;
+}
+
+ol {
+  list-style: decimal inside;
+  padding: 0px 20px;
+}
+
+/* .error {
+  border: 3px solid #aa5042;
+  padding: 25px;
+  text-align: center;
+} */
+
