@@ -3,3 +3,30 @@
   padding: 25px;
   text-align: center;
 } */
+
+.form {
+  margin: 0 auto;
+  width: fit-content;
+  border: 3px solid blue;
+  border-radius: 15px;
+  background-color: yellow;
+  padding: 20px 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+#player-name, button {
+  font-family: glass-antiqua;
+  border: 2px solid blue;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.start-game:hover {
+  background-color: lightgreen;
+}

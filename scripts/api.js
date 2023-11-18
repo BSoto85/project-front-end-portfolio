@@ -1,6 +1,6 @@
 // Header Banner
 const indexHeaderBanner = () => {
-  for(let i = 1; i < 6; i++) {
+  for(let i = 0; i < 5; i++) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId()}`)
     .then(response => response.json())
     .then(data => {
@@ -14,4 +14,15 @@ const indexHeaderBanner = () => {
     .catch(displayError)
   }
 }
-// indexHeaderBanner()
+indexHeaderBanner()
+
+const generatePokemonCards = () => {
+  for(let i = 0; i < 5; i++) {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId()}`)
+    .then(response => response.json())
+    .then(data => {
+      pokemonCard(data)
+    })
+    .catch(displayError)
+  }  
+}
