@@ -12,7 +12,3 @@ function displayError(error) {
   errorMessage.textContent = error
   section.append(paragraph, errorMessage)
 }
-
-// function getImage() {
-
-// }

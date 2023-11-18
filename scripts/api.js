@@ -1,10 +1,10 @@
 // Header Banner
-function headerBanner() {
+const indexHeaderBanner = () => {
   for(let i = 1; i < 6; i++) {
-    fetch(`https://pokeapi.co/api/v2/pokemon/` + `${randomPokemonId()}/`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId()}`)
     .then(response => response.json())
     .then(data => {
-      const header = document.querySelector('header')
+      const header = document.querySelector('.index-header')
       const div = document.createElement('div')
       div.classList.add('header-div')
       const image = document.createElement('img')
@@ -14,4 +14,4 @@ function headerBanner() {
     .catch(displayError)
   }
 }
-headerBanner()
+// indexHeaderBanner()
