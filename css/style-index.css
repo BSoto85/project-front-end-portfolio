@@ -1,8 +1,16 @@
-/* .error {
-  border: 3px solid #aa5042;
+.error {
+  margin: 0 auto;
+  display: none;
+  border: 3px solid blue;
+  border-radius: 15px;
   padding: 25px;
   text-align: center;
-} */
+  background-color: white;
+  width: fit-content;
+  color: red;
+  font-family: pokemon-solid;
+  letter-spacing: 3px;
+}
 
 .form {
   margin: 0 auto;
@@ -17,7 +25,7 @@ label {
   padding-right: 10px;
 }
 
-#player-name, button {
+#playername, button {
   font-family: glass-antiqua;
   border: 2px solid blue;
   border-radius: 12px;
@@ -30,3 +38,40 @@ label {
 .start-game:hover {
   background-color: lightgreen;
 }
+
+.player1, .player2 {
+  text-align: center;
+  margin: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  border-radius: 15px;
+  column-gap: 10px;
+  padding-bottom: 10px;
+}
+
+.p1-pokemon-card, .p2-pokemon-card {
+  margin: 0 auto;
+  border: 2px solid blue;
+  border-radius: 15px;
+  height: 250px;
+  width: 100px;
+  padding: 30px 40px 0px 40px;
+  font-size: 16px;
+}
+
+h2 {
+  background-color: yellow;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+p {
+  height: fit-content;
+  margin: 0;
+}
+
+/* section {
+  gap: 5px;
+  background-color: none;
+} */

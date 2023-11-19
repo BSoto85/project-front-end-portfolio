@@ -42,3 +42,15 @@ a {
 a:visited {
   color: blue;
 }
+
+/* @media (max-width: 780px) {
+  .goods ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .goods ul {
+    grid-template-columns: 1fr;
+  }
+} */
