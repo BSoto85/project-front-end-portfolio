@@ -38,23 +38,23 @@ const p2CardTemplate = (sprites, name, stats) => {
   return section
 }
 
-const p1ApiCall = () => {
+const p1ApiCall = (columns) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId()}`)
       .then(response => response.json())
       .then(data => {
         const {sprites, name, stats} = data
-        p1GeneratePokemonCard(sprites, name, stats)
-
+        console.log(columns)
+        p1GeneratePokemonCard(sprites, name, stats, columns)
       })
       .catch(displayError)
 }
 
-const p2ApiCall = () => {
+const p2ApiCall = (columns) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemonId()}`)
       .then(response => response.json())
       .then(data => {
         const {sprites, name, stats} = data
-        p2GeneratePokemonCard(sprites, name, stats)
+        p2GeneratePokemonCard(sprites, name, stats, columns)
       })
       .catch(displayError)
 }

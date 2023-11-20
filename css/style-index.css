@@ -43,7 +43,6 @@ label {
   text-align: center;
   margin: 50px 0px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   border-radius: 15px;
   column-gap: 10px;
@@ -58,6 +57,16 @@ label {
   width: 100px;
   padding: 30px 40px 0px 40px;
   font-size: 16px;
+}
+
+.columns3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.columns6 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 h2 {

@@ -35,8 +35,8 @@ form.addEventListener('submit', (event)=>{
     amount = 6
   }
   for(let i = 0; i < amount; i++) {
-    p1ApiCall()
-    p2ApiCall()
+    p1ApiCall(amount)
+    p2ApiCall(amount)
     form.reset()
   }
 })
