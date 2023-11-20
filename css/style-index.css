@@ -41,7 +41,7 @@ label {
 
 .player1, .player2 {
   text-align: center;
-  margin: 50px 0px;
+  margin: 5px 0px;
   display: grid;
   align-items: center;
   border-radius: 15px;
@@ -53,8 +53,8 @@ label {
   margin: 0 auto;
   border: 2px solid blue;
   border-radius: 15px;
-  height: 250px;
-  width: 100px;
+  height: 200px;
+  width: 80px;
   padding: 30px 40px 0px 40px;
   font-size: 16px;
 }
@@ -73,6 +73,9 @@ h2 {
   background-color: yellow;
   border: 2px solid blue;
   border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  margin-left: 20px;
 }
 
 p {
@@ -80,7 +83,32 @@ p {
   margin: 0;
 }
 
-/* section {
-  gap: 5px;
-  background-color: none;
-} */
+.battlefield button{
+  margin: 0 auto;
+  display: block;
+  height: 200px;
+  width: 100%;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/denyxek-e3205bd3-ce6c-4134-bf04-445592a06071.png/v1/fill/w_1056,h_757,q_70,strp/grass_background_by_willdinomaster55_denyxek-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvODBmZjUyM2YtZmY4NC00NTdkLWE1NDctNDY0NTg4ZDNhM2QzXC9kZW55eGVrLWUzMjA1YmQzLWNlNmMtNDEzNC1iZjA0LTQ0NTU5MmEwNjA3MS5wbmciLCJ3aWR0aCI6Ijw9MTI1NSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.UlInvElbjeEtOtkhNTo-VQ9ZALi79Tcj7_breRrqGOU');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+@media (max-width: 750px) {
+  .player1, .player2 {
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+  }
+  .battle-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .battlefield button {
+    margin-top: 105px;
+    height: 86%;
+  }
+}

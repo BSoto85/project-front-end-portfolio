@@ -16,13 +16,14 @@ const indexHeaderBanner = () => {
 }
 indexHeaderBanner()
 
+
 const form = document.querySelector('form')
 form.addEventListener('submit', (event)=>{
   event.preventDefault()
   const player1 = document.querySelector('.player1')
   const {playername} = event.target
   const player1Name = document.createElement('h2')
-  player1Name.innerText = `Player 1: ${playername.value}`
+  player1Name.innerText = playername.value
   player1.append(player1Name)
   const player2 = document.querySelector('.player2')
   const player2Name = document.createElement('h2')
@@ -34,6 +35,14 @@ form.addEventListener('submit', (event)=>{
   } else if(document.querySelector('#pokemon6').checked) {
     amount = 6
   }
+  const header = document.querySelector('header')
+  header.style.display = 'none'
+  const divForm = document.querySelector('.form')
+  divForm.style.display = 'none'
+  const battlefield = document.querySelector('.battlefield')
+  const battleButton = document.createElement('button')
+  battleButton.innerText = 'BATTLE'
+  battlefield.append(battleButton)
   for(let i = 0; i < amount; i++) {
     p1ApiCall(amount)
     p2ApiCall(amount)

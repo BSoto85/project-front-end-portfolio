@@ -20,3 +20,9 @@ ol {
   list-style: decimal inside;
   padding: 0px 20px;
 }
+
+@media (max-width: 750px) {
+  header {
+    display: none;
+  }
+}
